@@ -43,6 +43,9 @@ sudo certbot certonly --standalone -d $DOMAIN
 
 sudo cp -rL /etc/letsencrypt/live/$DOMAIN/ /home/~keys
 
+# Install tensorflow
+pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.2.1-cp36-cp36m-linux_x86_64.whl
+
 # Config Jupyter
 jupyter notebook --generate-config
 jupyter notebook password
@@ -69,4 +72,4 @@ echo "export PATH=~/anaconda3/bin:$PATH" >> ~/.bash_profile
 
 # Run
 echo "Installation complete"
-echo "Run server with bash notebook.sh"
+echo "Run server with bash ~/notebook.sh"
