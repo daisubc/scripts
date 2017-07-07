@@ -5,6 +5,9 @@ Post-installation script for setting up Anaconda, remote Jupyter access and Open
 * Clone the repository:
 `git clone https://github.com/daisubc/scripts.git`
 
+* Change directory:
+` cd scripts`
+
 * Run:
 `bash install.sh`
 
