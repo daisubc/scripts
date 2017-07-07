@@ -3,6 +3,8 @@ Post-installation script for setting up Anaconda, remote Jupyter access and Open
 
 # Usage
 `git clone https://github.com/daisubc/scripts.git`
+
 `nano install.sh`
+
 `bash install.sh`
 
