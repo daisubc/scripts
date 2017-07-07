@@ -1,5 +1,5 @@
 # Description
-Post-installation script for setting up Anaconda, remote Jupyter access and OpenAI on Ubuntu 16.04.
+Post-installation script for setting up Anaconda, remote Jupyter access, Tensorflow and OpenAI Gym on Ubuntu 16.04.
 
 # Usage
 * Clone the repository:
