@@ -3,6 +3,9 @@
 # Which port should Jupyter listen on? (Default: 9999)
 PORT=9999
 
+# cd to ~
+cd ~
+
 # Get custom domain
 echo "Enter your custom domain (i.e. server.siang.ca): "
 read DOMAIN
