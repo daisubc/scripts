@@ -20,7 +20,7 @@ sudo apt-get -y upgrade
 # Install anaconda
 wget https://repo.continuum.io/archive/Anaconda3-4.4.0-Linux-x86_64.sh
 bash Anaconda3-4.4.0-Linux-x86_64.sh -b
-export PATH=~/anaconda3/bin:$PATH
+
 
 # For gym
 sudo apt-get install -y python-numpy python-dev cmake zlib1g-dev libjpeg-dev xvfb libav-tools xorg-dev python-opengl libboost-all-dev libsdl2-dev swig
@@ -61,8 +61,12 @@ mkdir notebook
 
 cat > ~/notebook.sh << EOL
 cd ~/notebook
-xvfb-run -a -s \"-screen 0 1400x900x24\" jupyter notebook
+xvfb-run -a -s "-screen 0 1400x900x24" jupyter notebook
 EOL
 
+# Export conda path
+echo "export PATH=~/anaconda3/bin:$PATH" >> ~/.bash_profile
+
+# Run
 echo "Installation complete"
-echo "Run with bash notebook.sh"
+echo "Run server with bash ~/notebook.sh"
