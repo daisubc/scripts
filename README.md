@@ -8,6 +8,6 @@ Post-installation script for setting up Anaconda, remote Jupyter access and Open
 * Change directory:
 ` cd scripts`
 
-* Run:
-`bash install.sh`
+* Run server:
+`screen -d -m bash notebook.sh`
 
