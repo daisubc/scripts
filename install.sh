@@ -69,4 +69,4 @@ echo "export PATH=~/anaconda3/bin:$PATH" >> ~/.bash_profile
 
 # Run
 echo "Installation complete"
-echo "Run server with bash ~/notebook.sh"
+echo "Run server with bash notebook.sh"
