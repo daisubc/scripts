@@ -1,8 +1,11 @@
 #!/bin/bash
 
-# Enter variables
-DOMAIN="your.domain.name"
+# Which port should Jupyter listen on? (Default: 9999)
 PORT=9999
+
+# Get custom domain
+echo "Enter your custom domain (i.e. server.siang.ca): "
+read DOMAIN
 
 # Fix unable to resolve host
 echo $(hostname -I | cut -d\  -f1) $(hostname) | sudo tee -a /etc/hosts
