@@ -20,7 +20,7 @@ sudo apt-get -y upgrade
 # Install anaconda
 wget https://repo.continuum.io/archive/Anaconda3-4.4.0-Linux-x86_64.sh
 bash Anaconda3-4.4.0-Linux-x86_64.sh -b
-
+export PATH=~/anaconda3/bin:$PATH
 
 # For gym
 sudo apt-get install -y python-numpy python-dev cmake zlib1g-dev libjpeg-dev xvfb libav-tools xorg-dev python-opengl libboost-all-dev libsdl2-dev swig
