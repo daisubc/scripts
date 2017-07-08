@@ -8,6 +8,9 @@ Post-installation script for setting up Anaconda, remote Jupyter access, Tensorf
 * Change directory:
 ` cd scripts`
 
+* Install and follow the instructions:
+`bash install.sh`
+
 * Run server:
 `screen -d -m bash notebook.sh`
 
