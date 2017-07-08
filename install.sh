@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Which port should Jupyter listen on? (Default: 9999)
-PORT=9999
-
 # cd to ~
 cd ~
 
@@ -54,7 +51,7 @@ jupyter notebook password
 cat > ~/.jupyter/jupyter_notebook_config.py << EOL
 c.NotebookApp.ip = '*'
 c.NotebookApp.open_browser = False
-c.NotebookApp.port = ${PORT}
+c.NotebookApp.port = 9999
 c.NotebookApp.certfile = u'/home/~keys/fullchain.pem'
 c.NotebookApp.keyfile = u'/home/~keys/privkey.pem'
 EOL
